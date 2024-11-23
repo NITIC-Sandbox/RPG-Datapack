@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:vindicator",
+    "nbt": "{Tags:[\"boss_physical\"]}",
+    "location": {
+      "dimension": "minecraft:overworld"
+    }
+  }
+}

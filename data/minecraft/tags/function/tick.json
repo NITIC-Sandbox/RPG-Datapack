@@ -1,3 +1,3 @@
 {
-  "values": ["rpg:boss/main"]
+  "values": ["rpg:boss/main", "rpg:mob_spawn/spawn_timer"]
 }

@@ -1,3 +1,3 @@
 {
-  "values": ["rpg:reload"]
+  "values": ["rpg:reload","rpg:mob_spawn/initialize"]
 }

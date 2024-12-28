@@ -10,7 +10,7 @@ execute if score #spawn_timer spawn_timer matches 200 store result score #spawn_
 execute if score #spawn_timer spawn_timer matches 200 store result score #spawn_counter counter_libzombie if entity @e[tag=libzombie, predicate=rpg:mob_spawn/lc_libzombie_area]
 
 #メディアセンターあたりのゾンビスポーン
-execute if score #spawn_timer spawn_timer matches 200 if score #spawn_counter spawn_timer matches 200 if entity @a[predicate=rpg:mob_spawn/lc_libzombie_player] if score #spawn_counter counter_libzombie matches ..10 if score #spawn_counter counter_libzombie matches ..100 run summon zombie -44 65 -62 {IsBaby: 0, CanBreakDoor: 0,ArmorItems:[{},{},{},{id:bookshelf,count:1}],ArmorDropChances:[0f,0f,0f,0f],DeathLootTable:"rpg:s", Tags:["field_mob","libzombie"]}
+execute if score #spawn_timer spawn_timer matches 200 if entity @a[predicate=rpg:mob_spawn/lc_libzombie_player] if score #spawn_counter counter_libzombie matches ..10 if score #spawn_counter counter_mob matches ..100 run summon zombie -44 65 -62 {IsBaby: false, CanBreakDoor: false, ArmorItems:[{},{},{},{id:bookshelf,count:1}],ArmorDropChances:[0f,0f,0f,0f], DeathLootTable:"rpg:s", Tags:["field_mob","libzombie"]}
 # execute if entity @p[distance=..5] unless entity @e[type=zombie,distance=..10] run summon zombie ~ ~2 ~ {IsBaby:0,CanBreakDoor:0,ArmorItems:[{},{},{},{id:bookshelf,count:1}],ArmorDropChances:[0f,0f,0f,0f],DeathLootTable:"rpg:s"}
 
 #リセット
